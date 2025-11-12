@@ -1,4 +1,4 @@
-module github.com/epicsagas/korean-postalcode
+module github.com/oursportsnation/korean-postalcode
 
 go 1.21
 
