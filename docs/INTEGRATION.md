@@ -1,6 +1,6 @@
 # 다른 프로젝트에서 사용하기
 
-이 문서는 `github.com/epicsagas/korean-postalcode` 패키지를 다른 Go 프로젝트에서 사용하는 방법을 설명합니다.
+이 문서는 `github.com/oursportsnation/korean-postalcode` 패키지를 다른 Go 프로젝트에서 사용하는 방법을 설명합니다.
 
 ## 방법 1: 기존 프로젝트에서 DB 연결 재사용
 
@@ -17,7 +17,7 @@ package main
 import (
     "your-project/internal/infrastructure/config"
     "your-project/internal/infrastructure/datastore"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 )
 
 func main() {
@@ -42,7 +42,7 @@ func main() {
 ```go
 import (
     "github.com/gin-gonic/gin"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 )
 
 func main() {
@@ -113,7 +113,7 @@ Tags:
 
 ```bash
 cd my-service
-go get github.com/epicsagas/korean-postalcode
+go get github.com/oursportsnation/korean-postalcode
 ```
 
 ### 2단계: 코드에서 사용
@@ -125,7 +125,7 @@ module my-service
 go 1.21
 
 require (
-    github.com/epicsagas/korean-postalcode v1.0.0
+    github.com/oursportsnation/korean-postalcode v1.0.0
     gorm.io/gorm v1.25.0
 )
 ```
@@ -135,7 +135,7 @@ require (
 package main
 
 import (
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -168,11 +168,11 @@ module service-a
 go 1.21
 
 require (
-    github.com/epicsagas/korean-postalcode v1.0.0
+    github.com/oursportsnation/korean-postalcode v1.0.0
     gorm.io/gorm v1.25.0
 )
 
-replace github.com/epicsagas/korean-postalcode => ../shared
+replace github.com/oursportsnation/korean-postalcode => ../shared
 ```
 
 **my-service/main.go**:
@@ -180,7 +180,7 @@ replace github.com/epicsagas/korean-postalcode => ../shared
 package main
 
 import (
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -203,7 +203,7 @@ package main
 
 import (
     "github.com/gin-gonic/gin"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -279,7 +279,7 @@ func main() {
 package main
 
 import (
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -339,7 +339,7 @@ package main
 
 import (
     "net/http"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -420,7 +420,7 @@ go build -o postalcode-migrate cmd/postalcode-migrate/main.go
 package main
 
 import (
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -454,13 +454,13 @@ git push origin v1.0.0
 
 ```bash
 # 특정 버전
-go get github.com/epicsagas/korean-postalcode@v1.0.0
+go get github.com/oursportsnation/korean-postalcode@v1.0.0
 
 # 최신 버전
-go get github.com/epicsagas/korean-postalcode@latest
+go get github.com/oursportsnation/korean-postalcode@latest
 
 # 특정 커밋
-go get github.com/epicsagas/korean-postalcode@commit-hash
+go get github.com/oursportsnation/korean-postalcode@commit-hash
 ```
 
 ## 트러블슈팅
@@ -472,7 +472,7 @@ go get github.com/epicsagas/korean-postalcode@commit-hash
 import "pkg/postalcode"
 
 // ✅ 올바른 import
-import postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+import postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 ```
 
 ### Database Connection 문제
@@ -497,7 +497,7 @@ repo := postalcodeapi.NewRepository(db)
 go clean -modcache
 
 # 다시 설치
-go get github.com/epicsagas/korean-postalcode
+go get github.com/oursportsnation/korean-postalcode
 ```
 
 ## 📚 관련 문서

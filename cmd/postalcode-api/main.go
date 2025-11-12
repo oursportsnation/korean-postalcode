@@ -11,15 +11,15 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/epicsagas/korean-postalcode"
-	postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
 	"github.com/gin-gonic/gin"
+	postalcode "github.com/oursportsnation/korean-postalcode"
+	postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 
-	_ "github.com/epicsagas/korean-postalcode/docs/swagger" // Swagger docs
+	_ "github.com/oursportsnation/korean-postalcode/docs/swagger" // Swagger docs
 )
 
 var (
@@ -36,7 +36,7 @@ var (
 // @termsOfService http://swagger.io/terms/
 
 // @contact.name API Support
-// @contact.url https://github.com/epicsagas/korean-postalcode
+// @contact.url https://github.com/oursportsnation/korean-postalcode
 // @contact.email support@example.com
 
 // @license.name MIT

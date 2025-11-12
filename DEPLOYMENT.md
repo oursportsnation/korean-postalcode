@@ -88,7 +88,7 @@ git push origin v1.0.0
 
 **About (저장소 상단)**
 - Description: `한국 우편번호 및 도로명주소 데이터를 관리하는 재사용 가능한 Go 패키지`
-- Website: `https://pkg.go.dev/github.com/epicsagas/korean-postalcode`
+- Website: `https://pkg.go.dev/github.com/oursportsnation/korean-postalcode`
 - Topics: `go`, `golang`, `postal-code`, `korea`, `address`, `korean-address`, `gorm`, `rest-api`
 
 **Features (Settings → General)**
@@ -135,10 +135,10 @@ GitHub Actions에서 사용할 Secrets:
 
 ```bash
 # 브라우저에서 접속
-https://pkg.go.dev/github.com/epicsagas/korean-postalcode
+https://pkg.go.dev/github.com/oursportsnation/korean-postalcode
 
 # 또는
-curl https://sum.golang.org/lookup/github.com/epicsagas/korean-postalcode@v1.0.0
+curl https://sum.golang.org/lookup/github.com/oursportsnation/korean-postalcode@v1.0.0
 ```
 
 ## 📝 README Badges 추가
@@ -146,10 +146,10 @@ curl https://sum.golang.org/lookup/github.com/epicsagas/korean-postalcode@v1.0.0
 저장소의 README.md 상단에 추가 배지:
 
 ```markdown
-[![Go Reference](https://pkg.go.dev/badge/github.com/epicsagas/korean-postalcode.svg)](https://pkg.go.dev/github.com/epicsagas/korean-postalcode)
-[![Go Report Card](https://goreportcard.com/badge/github.com/epicsagas/korean-postalcode)](https://goreportcard.com/report/github.com/epicsagas/korean-postalcode)
-[![CI](https://github.com/epicsagas/korean-postalcode/workflows/CI/badge.svg)](https://github.com/epicsagas/korean-postalcode/actions)
-[![codecov](https://codecov.io/gh/epicsagas/korean-postalcode/branch/main/graph/badge.svg)](https://codecov.io/gh/epicsagas/korean-postalcode)
+[![Go Reference](https://pkg.go.dev/badge/github.com/oursportsnation/korean-postalcode.svg)](https://pkg.go.dev/github.com/oursportsnation/korean-postalcode)
+[![Go Report Card](https://goreportcard.com/badge/github.com/oursportsnation/korean-postalcode)](https://goreportcard.com/report/github.com/oursportsnation/korean-postalcode)
+[![CI](https://github.com/oursportsnation/korean-postalcode/workflows/CI/badge.svg)](https://github.com/oursportsnation/korean-postalcode/actions)
+[![codecov](https://codecov.io/gh/oursportsnation/korean-postalcode/branch/main/graph/badge.svg)](https://codecov.io/gh/oursportsnation/korean-postalcode)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ```
 
@@ -194,8 +194,8 @@ hotfix/*     - 긴급 수정
 
 ## 📞 지원 및 커뮤니티
 
-- **Issues**: https://github.com/epicsagas/korean-postalcode/issues
-- **Discussions**: https://github.com/epicsagas/korean-postalcode/discussions
+- **Issues**: https://github.com/oursportsnation/korean-postalcode/issues
+- **Discussions**: https://github.com/oursportsnation/korean-postalcode/discussions
 - **Pull Requests**: 기여를 환영합니다!
 
 ---

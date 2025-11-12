@@ -19,7 +19,7 @@
 
 ```go
 import (
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 )
 
 // 표준 http.ServeMux

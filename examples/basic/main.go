@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	postalcode "github.com/epicsagas/korean-postalcode"
-	postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+	postalcode "github.com/oursportsnation/korean-postalcode"
+	postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/epicsagas/korean-postalcode"
-	"github.com/epicsagas/korean-postalcode/internal/service"
+	postalcode "github.com/oursportsnation/korean-postalcode"
+	"github.com/oursportsnation/korean-postalcode/internal/service"
 )
 
 // Importer는 파일에서 우편번호 데이터를 가져오는 기능을 제공합니다.

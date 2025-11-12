@@ -4,7 +4,7 @@
 
 [![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)](https://go.dev/)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Go Reference](https://pkg.go.dev/badge/github.com/epicsagas/korean-postalcode.svg)](https://pkg.go.dev/github.com/epicsagas/korean-postalcode)
+[![Go Reference](https://pkg.go.dev/badge/github.com/oursportsnation/korean-postalcode.svg)](https://pkg.go.dev/github.com/oursportsnation/korean-postalcode)
 
 ## ✨ 특징
 
@@ -20,7 +20,7 @@
 ## 📦 설치
 
 ```bash
-go get github.com/epicsagas/korean-postalcode
+go get github.com/oursportsnation/korean-postalcode
 ```
 
 ## 🚀 빠른 시작
@@ -65,8 +65,8 @@ go build -o postalcode-migrate cmd/postalcode-migrate/main.go
 
 ```go
 import (
-    "github.com/epicsagas/korean-postalcode"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    "github.com/oursportsnation/korean-postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/driver/mysql"
     "gorm.io/gorm"
 )
@@ -90,8 +90,8 @@ landResults, _ := service.GetLandByZipCode("25627")
 
 ```go
 import (
-    "github.com/epicsagas/korean-postalcode"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    "github.com/oursportsnation/korean-postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 )
 
 // .env 파일에서 설정 로드
@@ -109,7 +109,7 @@ service := postalcodeapi.NewService(repo)
 
 ```go
 import (
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "your-project/internal/database" // 기존 프로젝트의 DB
 )
 
@@ -172,7 +172,7 @@ swag init -g cmd/postalcode-api/main.go -o docs/swagger --parseDependency --pars
 ```go
 import (
     "github.com/gin-gonic/gin"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 )
 
 service := postalcodeapi.NewService(repo)
@@ -186,7 +186,7 @@ router.Run(":8080")
 ```go
 import (
     "net/http"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 )
 
 service := postalcodeapi.NewService(repo)
@@ -318,7 +318,7 @@ go build -o postalcode-import
 ### 4. 프로그래밍 방식으로 Import
 
 ```go
-import postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+import postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 
 importer := postalcodeapi.NewImporter(service)
 
@@ -343,7 +343,7 @@ landResult, err := importer.ImportLandFromFile("land_data.txt", 1000, progressFn
 ### AutoMigrate (권장)
 
 ```go
-import "github.com/epicsagas/korean-postalcode"
+import "github.com/oursportsnation/korean-postalcode"
 
 // 도로명주소 및 지번주소 테이블 자동 생성
 db.AutoMigrate(&postalcode.PostalCodeRoad{}, &postalcode.PostalCodeLand{})
@@ -376,7 +376,7 @@ mysql -u user -p database < migrations/create_postal_code_lands.sql
 ```go
 import (
     "errors"
-    "github.com/epicsagas/korean-postalcode"
+    "github.com/oursportsnation/korean-postalcode"
 )
 
 results, err := service.GetByZipCode("01000")

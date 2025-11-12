@@ -3,7 +3,7 @@ package repository
 import (
 	"testing"
 
-	"github.com/epicsagas/korean-postalcode"
+	postalcode "github.com/oursportsnation/korean-postalcode"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"gorm.io/driver/sqlite"

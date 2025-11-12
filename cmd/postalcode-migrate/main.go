@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/epicsagas/korean-postalcode"
+	postalcode "github.com/oursportsnation/korean-postalcode"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

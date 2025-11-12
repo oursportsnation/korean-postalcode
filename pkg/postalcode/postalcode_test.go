@@ -6,8 +6,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/epicsagas/korean-postalcode"
 	"github.com/gin-gonic/gin"
+	postalcode "github.com/oursportsnation/korean-postalcode"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"gorm.io/driver/sqlite"

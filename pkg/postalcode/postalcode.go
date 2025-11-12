@@ -7,7 +7,7 @@
 // Example usage:
 //
 //	import (
-//	    postalcode "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+//	    postalcode "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
 //	    "gorm.io/driver/mysql"
 //	    "gorm.io/gorm"
 //	)
@@ -19,13 +19,14 @@
 package postalcode
 
 import (
-	"github.com/epicsagas/korean-postalcode/internal/http"
-	"github.com/epicsagas/korean-postalcode/internal/importer"
-	"github.com/epicsagas/korean-postalcode/internal/repository"
-	"github.com/epicsagas/korean-postalcode/internal/service"
-	"github.com/gin-gonic/gin"
-	"gorm.io/gorm"
 	stdhttp "net/http"
+
+	"github.com/gin-gonic/gin"
+	"github.com/oursportsnation/korean-postalcode/internal/http"
+	"github.com/oursportsnation/korean-postalcode/internal/importer"
+	"github.com/oursportsnation/korean-postalcode/internal/repository"
+	"github.com/oursportsnation/korean-postalcode/internal/service"
+	"gorm.io/gorm"
 )
 
 // ============================================================

@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"github.com/epicsagas/korean-postalcode"
+	postalcode "github.com/oursportsnation/korean-postalcode"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"
 )

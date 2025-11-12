@@ -15,7 +15,7 @@
 package main
 
 import (
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -88,7 +88,7 @@ package main
 
 import (
     "fmt"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -166,7 +166,7 @@ package main
 
 import (
     "net/http"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -196,7 +196,7 @@ package main
 
 import (
     "github.com/gin-gonic/gin"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -238,7 +238,7 @@ package main
 
 import (
     "github.com/gin-gonic/gin"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -304,7 +304,7 @@ package main
 
 import (
     "github.com/labstack/echo/v4"
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 
@@ -463,7 +463,7 @@ go build -o postalcode-migrate cmd/postalcode-migrate/main.go
 
 ```go
 import (
-    postalcodeapi "github.com/epicsagas/korean-postalcode/pkg/postalcode"
+    postalcodeapi "github.com/oursportsnation/korean-postalcode/pkg/postalcode"
     "gorm.io/gorm"
 )
 

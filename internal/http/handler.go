@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	postalcode "github.com/epicsagas/korean-postalcode"
-	"github.com/epicsagas/korean-postalcode/internal/service"
+	postalcode "github.com/oursportsnation/korean-postalcode"
+	"github.com/oursportsnation/korean-postalcode/internal/service"
 )
 
 // Handler는 우편번호 REST API 핸들러입니다.

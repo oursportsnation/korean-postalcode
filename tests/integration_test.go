@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/epicsagas/korean-postalcode"
-	"github.com/epicsagas/korean-postalcode/internal/repository"
-	"github.com/epicsagas/korean-postalcode/internal/service"
+	postalcode "github.com/oursportsnation/korean-postalcode"
+	"github.com/oursportsnation/korean-postalcode/internal/repository"
+	"github.com/oursportsnation/korean-postalcode/internal/service"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"gorm.io/driver/sqlite"

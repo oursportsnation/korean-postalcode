@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strconv"
 
-	postalcode "github.com/epicsagas/korean-postalcode"
-	"github.com/epicsagas/korean-postalcode/internal/service"
 	"github.com/gin-gonic/gin"
+	postalcode "github.com/oursportsnation/korean-postalcode"
+	"github.com/oursportsnation/korean-postalcode/internal/service"
 )
 
 // ErrorResponse는 에러 응답 구조체입니다.

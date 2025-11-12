@@ -13,7 +13,7 @@ const docTemplate = `{
         "termsOfService": "http://swagger.io/terms/",
         "contact": {
             "name": "API Support",
-            "url": "https://github.com/epicsagas/korean-postalcode",
+            "url": "https://github.com/oursportsnation/korean-postalcode",
             "email": "support@example.com"
         },
         "license": {

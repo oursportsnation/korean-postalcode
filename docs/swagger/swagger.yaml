@@ -173,7 +173,7 @@ info:
   contact:
     email: support@example.com
     name: API Support
-    url: https://github.com/epicsagas/korean-postalcode
+    url: https://github.com/oursportsnation/korean-postalcode
   description: |-
     한국 우편번호 검색 API - 도로명주소 및 지번주소 지원
     행정안전부 우편번호 데이터를 기반으로 한 우편번호 검색 서비스입니다.

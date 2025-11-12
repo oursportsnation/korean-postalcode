@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/epicsagas/korean-postalcode"
-	"github.com/epicsagas/korean-postalcode/internal/repository"
+	postalcode "github.com/oursportsnation/korean-postalcode"
+	"github.com/oursportsnation/korean-postalcode/internal/repository"
 )
 
 // Service는 우편번호 비즈니스 로직을 제공합니다.
